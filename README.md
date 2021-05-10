@@ -25,5 +25,10 @@ yarn test:unit
 yarn lint
 ```
 
+### Deploy to github pages hosting (https://ekm224.github.io/shoppies/)
+```
+yarn deploy
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
