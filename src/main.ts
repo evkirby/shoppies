@@ -6,6 +6,7 @@ import Dialog from "primevue/dialog";
 import PrimeVue from "primevue/config";
 import firebase from 'firebase/app';
 require('firebase/analytics');
+require('firebase/firestore');
 
 const firebaseConfig = {
   apiKey: "AIzaSyAdJZBviWmZd4dU6OBnco-zfLwP2068Vw0",
@@ -19,6 +20,7 @@ const firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
+var db = firebase.firestore();
 
 createApp(App)
   .use(router, store, PrimeVue)
